@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/figuren/favicon.png">
+    <title>DBiCTS-Numpy</title>
+    <script src="/scripts/htmx.min.js"></script>
+    <script src="/scripts/myjs.js"></script>
+    <link rel="canonical" href="https://www.dbicts.be/cursussen/numpy.html">
+    <link rel="stylesheet" href="/styles/init.css">
+</head>
+
+<body>
+    <header>
+        <span>
+            <img src='/figuren/dbicts_logo_web.png' alt="DBiCTS Logo" />
+        </span>
+        <span class="motto">Al meer dan 20 jaar ervaring in IT-opleidingen</span>
+    </header>
+    <main>
+        <div id="root">
+            <nav>
+                <ul class="menu menu--main">
+                    <li class="menu__item"><a href="/index.html">Wie</a></li>
+                    <li class="menu__item"><a href="/cursussen/sql.html" class='active'>Cursussen</a></li>
+                </ul>
+            </nav>
+
+            <h1 className="subtitel">Cursusoverzicht</h1>
+            <nav>
+                <ul class="menu menu--sub">
+                    <li class="menu__item"><a href="/cursussen/sql.html">SQL</a></li>
+                    <li class="menu__item"><a href="/cursussen/numpy.html" class="active">Numpy</a></li>
+                </ul>
+            </nav>
+            <article class="cursus">
+                <div class="cursus__detail">
+
+                        <div class="cursus__item">
+                            <div class="cursus__label">Prijs: </div>
+                            <div class="cursus__prijs">€ 300<span class="cursus_prijs--incl">(€ 363 incl. BTW)</span></div>
+                        </div>
+                        <div class="cursus__item">
+                            <div class="cursus__label">Type: </div>
+                            <div class="cursus__type">online</div>
+                        </div>
+                        <div class="cursus__item">
+                            <div class="cursus__label">Duurtijd: </div>
+                            <div class="cursus_duurtijd">4 halve dagen</div>
+                        </div><div class="cursus__samenvatting">
+                            <p>Numpy is een Python bibliotheek die gebruikt wordt om op een efficiënte manier berekeningen uit 
+                                te voeren. Daardoor is deze bibliotheek belangrijk wanneer je met grote hoeveelheden data wil 
+                                werken, zoals bij een data-analyse.
+                            </p>
+                            <p>Je zult Numpy voornamelijk tegenkomen wanneer je Python bibliotheken gebruikt voor data-analyse en 
+                                machine learning, zoals Pandas en Scikit-learn.
+                            </p>
+                            <p>De opleiding wordt online gegeven via Microsoft Teams. Om de opleiding te volgen kun je gebruik 
+                                maken van Google colab. Wanneer je Python lokaal op je PC kunt installeren, kan dat natuurlijk 
+                                ook. Je hebt dan nog wel een editor nodig zoals PyCharm of Visual Studio Code.
+                            </p>
+                        </div>
+                        <h3 class="cursus_subtitel">Programma</h3>
+                        <ul>
+                            <li>Vooraf: Werken met Google Colab/Numpy installeren</li>
+                            <li>Sessie 1: Numpy arrays en universal functions</li>
+                            <li>Sessie 2: Numpy matrices</li>
+                            <li>Sessie 3: Matrix transformaties, grafieken met Matplotlib</li>
+                            <li>Sessie 4: Kleinste kwadraten analyse en Principal Component Analysis met Numpy</li>
+                        </ul>
+                        <h3 class="cursus_subtitel">Sessies</h3>
+                        <ol hx-get="/data/sessies?cursus=2" hx-target="this" hx-swap="outerHTML" hx-trigger="load"></ol>
+                    </div>
+>
+            </article>
+        </div>
+
+    </main>
+    <footer>
+        <p>
+            &copy; 2024 DBiCTS<br />
+            <a href="/voorwaarden.html">Algemene voorwaarden</a><br />
+            <a href="/vrijwaring.html">Vrijwaringsclausule</a><br />
+            <a href="/gegevensverwerking.html">Verwerking van persoonsgegevens</a><br />
+        </p>
+        <p>DBiCTS BV <br />Boomsesteenweg 690<br /> 2610 Wilrijk.<br />ON: 0862.282.587 </p>
+    </footer>
+
+</body>
+
+</html>

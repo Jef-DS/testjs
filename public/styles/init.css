@@ -1,0 +1,167 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    background-color: #f0f9ff;
+    width:100vw;
+}
+
+body {
+    font-size: 1.6rem;
+    min-width: 600px;
+    max-width: 900px;
+    margin: 8px auto;
+    padding: 8px;
+}
+
+.motto {
+    font-style: italic;
+}
+header {
+    border-bottom: solid 4px #0064ff ;
+    display: flex;
+    align-items: flex-end;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+    padding-left:0px;
+}
+.menu--main {
+    background-color: #bfddf1;
+    border-top:1px solid  #91d1fc;
+    border-left:1px solid  #91d1fc;
+    border-right:1px solid  #91d1fc;
+    border-radius: 15px 15px 0px 0px;
+    border-bottom: 3px solid #5684ca;
+}
+.menu--sub {
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+.menu__item {
+    min-width: 15rem;
+}
+.menu--sub>.menu__item {
+    min-width: fit-content;
+    cursor: pointer;
+}
+.menu__item>a {
+    text-decoration: none;
+    color: #551A8B;
+    font-size: 3rem;
+    padding: 5px 10px;
+    display: inline-block;
+    width:100%;
+    text-align: center;
+}
+.menu--sub>.menu__item>a {
+    font-size: 2.5rem;
+    
+}
+.menu__item>a:hover {
+    color: #EE0000;
+}
+.menu--main>.menu__item>a.active{
+    background-color: #5684ca;
+    color: #f0f9ff;
+    border-radius: 15px 15px 0px 0px;
+}
+.menu--sub>.menu__item>a.active{
+    font-weight: bold;
+    color:#551A88;
+    background-color: #d4e9f7;
+    border-top:1px solid  #91d1fc;
+    border-left:1px solid  #91d1fc;
+    border-right:1px solid  #91d1fc;
+    border-radius: 15px 15px 0px 0px;
+}
+.menu__item>a.active:hover {
+    color: #EE4000;
+}
+.wie {
+    font-size: 2rem;
+}
+.wie>p:first-of-type{
+    margin-top: 0px;
+}
+
+.wie__foto {
+    float:left;
+    margin-right:8px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.cursus {
+    font-size: 2rem;
+}
+.cursus__detail, .wie {
+    border-top:1px solid  #91d1fc;
+    border-left:1px solid  #91d1fc;
+    border-right:1px solid  #91d1fc;
+    border-radius: 15px 15px 0px 0px;
+    padding: 8px;
+    background-color:#d4e9f7;
+}
+.subtitel {
+    font-size: 3rem;
+    padding-left: 8px;
+    margin-bottom: 0px;
+    color: #5684ca;
+}
+.cursus__item{
+    display:flex;
+    column-gap: 5px;
+}
+.cursus__label{
+    min-width: 10rem;
+    font-weight: 700;
+}
+.cursus__prijs--excl{
+    color: #928d8d;
+    font-size: 1.4rem;
+}
+
+.sessie {
+    width: 100%;
+    position: relative;
+    top:5px; /*uitlijnen van tabel met li::marker */
+}
+.sessie>thead{
+    vertical-align: bottom;
+}
+.inschrijving {
+    background-color: #5684ca;
+    color: #f0f9ff;
+    border-radius: 15px;
+    font-size: 2rem;
+}
+.inschrijving[disabled]{
+    background-color: rgba(19,1,1, 0.3);
+}
+.inschrijving:hover{
+    background-color: #0064ff;
+    cursor: pointer;
+}
+.inschrijving[disabled]:hover {
+    background-color: rgba(19,1,1, 0.3);
+    cursor:auto;
+}
+.formelement {
+    display:flex;
+    gap: 5px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+footer>p:last-of-type{
+    text-align: right;
+}
